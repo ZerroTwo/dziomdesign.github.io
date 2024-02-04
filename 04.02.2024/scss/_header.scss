@@ -1,0 +1,30 @@
+// HEADER
+header{
+	overflow: hidden;
+}
+.main-header {
+	height: 100vh;
+}
+.header-title {
+	position: absolute;
+	width: min-content;
+	bottom: 40vh;
+	line-height: .9;
+   letter-spacing: calc($index * 1);
+   :nth-child(2){
+      margin-left: 10vw;
+   }
+}
+.content, .hero, .main-header, .gallery > * {
+	will-change: transform;
+}
+.hero {
+	width: calc($index * 36);
+	position: absolute;
+	left: 40vw;
+	top: 9vh;
+	z-index: -1;
+   @media (max-width: 769px){
+      left: 10vw;
+   }
+}
